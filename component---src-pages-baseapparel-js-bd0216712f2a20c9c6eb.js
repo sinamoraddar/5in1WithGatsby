@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{e17U:function(e,a,n){"use strict";n.r(a);var l=n("q1tI"),t=n.n(l),c=n("Bl7J"),r=n("vrFN"),o=n("dTMZ");a.default=function(){return t.a.createElement(c.a,null,t.a.createElement(r.a,{title:"Base Apparel coming soon page coding challenge"}),t.a.createElement("h1",null,"BaseApparel"),t.a.createElement(o.a,null))}}}]);
+//# sourceMappingURL=component---src-pages-baseapparel-js-bd0216712f2a20c9c6eb.js.map
