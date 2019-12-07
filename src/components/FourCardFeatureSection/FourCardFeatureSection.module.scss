@@ -1,0 +1,25 @@
+@import "./styles/base/fonts";
+@import "./styles/libs/vars";
+.fourCardFeatureSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  * {
+    font-family: $fontFamily;
+  }
+  .header {
+    width: 500px;
+    text-align: center;
+    h1 {
+      font-weight: $lightFontWeight;
+      span {
+        font-weight: $boldFontWeight;
+      }
+    }
+    // font-weight: 200;
+  }
+  .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

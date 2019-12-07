@@ -1,0 +1,16 @@
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  a {
+    color: black;
+    text-decoration: none;
+    margin-right: 1rem;
+    @media screen and(hover:hover) {
+      &:hover {
+        color: lighten(black, 50);
+      }
+    }
+  }
+}

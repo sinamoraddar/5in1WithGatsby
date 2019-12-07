@@ -1,16 +1,14 @@
 import React from "react"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Menu from "../components/Menu/Menu"
 
-const NotFoundPage = () => (
+const BaseApparel = () => (
   <Layout>
-    <SEO title="404: Not found" />
-    <h1>NOT FOUND</h1>
-    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+    <SEO title="Base Apparel coming soon page coding challenge" />
+    <h1>BaseApparel</h1>
     <Menu />
   </Layout>
 )
 
-export default NotFoundPage
+export default BaseApparel
