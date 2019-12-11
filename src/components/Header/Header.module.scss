@@ -1,17 +1,50 @@
+@import "../FourCardFeatureSection/styles/base/fonts";
+@import "../FourCardFeatureSection/styles/libs/vars";
 .header {
-  background: red;
+  visibility: hidden;
+  background: rgba(45, 214, 135, 0.781);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
   position: fixed;
   left: 0;
-  height: 100vh;
-  width: 450px;
-  z-index: 5;
+  height: 100%;
+  width: 360px;
+  z-index: 1;
   padding: 1rem 2rem;
-  transition: display 5s ease-in-out;
-  .button {
-    position: static;
-    margin-bottom: 1rem;
+  animation-duration: 0.3s;
+  animation-timing-function: linear;
+  @media screen and (max-width: 460px) {
+    width: 100%;
+    background: rgb(45, 214, 135);
   }
-  transition: width 10s ease-in-out;
+  * {
+    font-family: $poppinsFontFamily;
+  }
+  // .button {
+  //   position: static;
+  //   margin-bottom: 1rem;
+  // }
+  .container {
+    position: relative;
+    top: 90px;
+  }
+  h1 {
+    font-size: 2em;
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+  }
+}
+.appear {
+  visibility: visible;
+  animation-name: appear;
+}
+.disappear {
+  // visibility: visible;
+  animation-name: disappear;
 }
 
 // .open {
@@ -39,5 +72,26 @@
     &:hover {
       opacity: 1;
     }
+  }
+}
+
+@keyframes appear {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+    // visibility: visible;
+  }
+}
+
+@keyframes disappear {
+  from {
+    transform: translateX(0);
+    visibility: visible;
+  }
+  to {
+    transform: translateX(-100%);
+    visibility: hidden;
   }
 }

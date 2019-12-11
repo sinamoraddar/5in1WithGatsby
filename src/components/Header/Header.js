@@ -7,52 +7,39 @@ import Menu from "../Menu/Menu"
 import styles from "./Header.module.scss"
 
 const Header = ({ siteTitle }) => {
-  const [isSideBarOpen, setIsSideBarOpen] = useState(false)
+  const [isSideBarHidden, setIsSideBarHidden] = useState(null)
   return (
     <React.Fragment>
-      {isSideBarOpen ? (
-        <header
-          className={`${styles.header} ${
-            isSideBarOpen ? styles.open : styles.close
-          }`}
-        >
-          <button
-            className={styles.button}
-            onClick={() => setIsSideBarOpen(isSideBarOpen => !isSideBarOpen)}
-          >
-            {isSideBarOpen ? <FontAwesomeIcon icon={faTimes} /> : "open"}
-          </button>
-          <div>
-            <h1>
-              <Link
-                to="/"
-                style={{
-                  color: `white`,
-                  textDecoration: `none`,
-                }}
-              >
-                {siteTitle}
-              </Link>
-            </h1>
-            <Menu />
-          </div>
-        </header>
-      ) : (
-        <button
-          className={styles.button}
-          onClick={() => setIsSideBarOpen(isSideBarOpen => !isSideBarOpen)}
-        >
-          {isSideBarOpen ? (
-            <FontAwesomeIcon icon="coffee" />
-          ) : (
-            <FontAwesomeIcon icon={faBars} />
-          )}
-        </button>
-      )}
+      <header
+        className={`${styles.header} ${isSideBarHidden !== null &&
+          (isSideBarHidden ? styles.disappear : styles.appear)}`}
+      >
+        <div className={styles.container}>
+          <h1>
+            <Link to="/">{siteTitle}</Link>
+          </h1>
+          <Menu />
+        </div>
+      </header>
+      <button
+        className={styles.button}
+        onClick={() =>
+          setIsSideBarHidden(isSideBarHidden => {
+            if (isSideBarHidden === null) {
+              return false
+            } else return !isSideBarHidden
+          })
+        }
+      >
+        {isSideBarHidden === null || false ? (
+          <FontAwesomeIcon icon={faBars} />
+        ) : (
+          <FontAwesomeIcon icon={faTimes} />
+        )}
+      </button>
     </React.Fragment>
   )
 }
-
 Header.propTypes = {
   siteTitle: PropTypes.string,
 }

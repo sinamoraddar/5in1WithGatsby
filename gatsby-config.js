@@ -1,7 +1,7 @@
 module.exports = {
-  pathPrefix: "/gatsbyPlayground",
+  pathPrefix: "/5in1WithGatsby",
   siteMetadata: {
-    title: `gatsbyPlayground`,
+    title: `5in1WithGatsby`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
