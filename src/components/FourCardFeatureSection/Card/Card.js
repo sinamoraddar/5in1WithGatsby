@@ -7,7 +7,7 @@ const Card = ({ color, image, title, description }) => {
         <h2>{title}</h2>
         {description}
       </div>
-      <embed src={image} />
+      <embed className={styles.logo} src={image} />
     </div>
   )
 }

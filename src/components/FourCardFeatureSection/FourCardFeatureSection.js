@@ -17,28 +17,31 @@ const FourCardFeatureSection = () => (
     </div>
     <div className={styles.cardContainer}>
       <Card
-        color="red"
-        image={teamBuilderImage}
-        title="Team Builder"
-        description="Scans our talent network to create the optimal team for your project"
+        color="cyan"
+        image={supervisorImage}
+        title="Supervisor"
+        description="Monitors activity to identify project roadblocks"
       />
+      <div className={styles.column}>
+        <Card
+          color="red"
+          image={teamBuilderImage}
+          title="Team Builder"
+          description="Scans our talent network to create the optimal team for your project"
+        />
+
+        <Card
+          color="orange"
+          image={karmaImage}
+          title="Karma"
+          description="Regularly evaluates our talent to ensure quality"
+        />
+      </div>
       <Card
         color="blue"
         image={calculatorImage}
         title="Calculator"
         description="Uses data from past projects to provide better delivery estimates"
-      />
-      <Card
-        color="orange"
-        image={karmaImage}
-        title="Karma"
-        description="Regularly evaluates our talent to ensure quality"
-      />
-      <Card
-        color="cyan"
-        image={supervisorImage}
-        title="Supervisor"
-        description="Monitors activity to identify project roadblocks"
       />
     </div>
   </main>

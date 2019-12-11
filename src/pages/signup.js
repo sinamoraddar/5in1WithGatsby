@@ -1,7 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Menu from "../components/Menu/Menu"
 const SignUp = () => (
   <Layout>
     <SEO
@@ -9,7 +8,6 @@ const SignUp = () => (
 "
     />
     <h1>SignUp</h1>
-    <Menu />
   </Layout>
 )
 

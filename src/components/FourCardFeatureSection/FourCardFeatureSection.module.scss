@@ -4,22 +4,51 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  background: $backgroundGray;
+  min-height: 100vh;
+  padding: 2.5rem 2rem;
   * {
     font-family: $fontFamily;
+    color: $grayishBlue;
   }
   .header {
-    width: 500px;
+    max-width: 590px;
+    width: 95%;
     text-align: center;
+    font-size: 0.9em;
+    margin-bottom: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    > * {
+      word-break: keep-all;
+    }
     h1 {
       font-weight: $lightFontWeight;
+      font-size: 2.1em;
+      margin-bottom: 1.1rem;
+      width: 95%;
+      line-height: 1.4;
       span {
         font-weight: $boldFontWeight;
+        color: $veryDarkBlue;
       }
     }
     // font-weight: 200;
   }
   .cardContainer {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 1066px) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .column {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

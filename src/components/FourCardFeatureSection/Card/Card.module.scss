@@ -2,16 +2,35 @@
 @import "../styles/libs/mixins";
 .card {
   width: 300px;
+  min-height: 225px;
+  background: white;
+  -webkit-box-shadow: 0px 15px 17px -8px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0px 15px 17px -8px rgba(0, 0, 0, 0.26);
+  box-shadow: 0px 15px 17px -8px rgba(0, 0, 0, 0.26);
+  margin: 15px;
+  border-radius: 5px;
+  padding: 1.5rem;
+  font-size: 0.7em;
+  position: relative;
+  h2 {
+    color: $veryDarkBlue;
+    font-size: 1.6em;
+    margin-bottom: 0.5rem;
+  }
   img {
     width: 80px;
     height: auto;
   }
   .logo {
-    width: 50px;
+    width: 70px;
     height: auto;
     background-size: cover;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
   }
 }
+
 .orange {
   @include borderTopGenerator($orange);
 }
