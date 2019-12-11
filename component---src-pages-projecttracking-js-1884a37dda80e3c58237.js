@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{Vhgv:function(e,n,t){"use strict";t.r(n);var a=t("q1tI"),c=t.n(a),r=t("Bl7J"),l=t("vrFN");n.default=function(){return c.a.createElement(r.a,null,c.a.createElement(l.a,{title:"Project tracking intro component coding challenge"}),c.a.createElement("h1",null,"ProjectTracking"))}}}]);
+//# sourceMappingURL=component---src-pages-projecttracking-js-1884a37dda80e3c58237.js.map
