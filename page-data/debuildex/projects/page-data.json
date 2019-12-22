@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-pages-debuildex-projects-js","path":"/debuildex/projects/","result":{"pageContext":{"isCreatedByStatefulCreatePages":true}}}
+{"componentChunkName":"component---src-pages-debuildex-projects-js","path":"/debuildex/projects/","result":{"data":{"allProjectsJson":{"nodes":[{"name":"debuildex","techStack":["reactjs","gatsbyjs"]},{"name":"my great app","techStack":["react native"]}]}},"pageContext":{"isCreatedByStatefulCreatePages":true}}}

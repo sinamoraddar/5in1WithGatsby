@@ -1,1 +1,1 @@
-{"componentChunkName":"component---src-pages-debuildex-persons-js","path":"/debuildex/persons/","result":{"pageContext":{"isCreatedByStatefulCreatePages":true}}}
+{"componentChunkName":"component---src-pages-debuildex-persons-js","path":"/debuildex/persons/","result":{"data":{"allPersonsJson":{"nodes":[{"name":"mohammad","role":"mobile developer"},{"name":"sina","role":"frontend"},{"name":"ahmad","role":"backend"},{"name":"sohrab","role":"mobile developer"}]}},"pageContext":{"isCreatedByStatefulCreatePages":true}}}
