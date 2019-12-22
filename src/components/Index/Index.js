@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styles from "./Index.module.scss"
-import Menu from "../Menu/Menu"
+import Menu from "../NavigationMenu/NavigationMenu"
 
 const Index = () => {
   return (

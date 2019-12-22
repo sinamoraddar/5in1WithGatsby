@@ -1,0 +1,7 @@
+[
+  {
+    "name": "debuildex",
+    "techStack": ["reactjs", "gatsbyjs"]
+  },
+  { "name": "i love food", "techStack": ["reactjs"] }
+]

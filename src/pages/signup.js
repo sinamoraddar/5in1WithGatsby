@@ -1,7 +1,7 @@
 import React from "react"
-import Layout from "../components/layout"
+import Layout from "../components/Layout/layout"
 import SEO from "../components/seo"
-const SignUp = () => (
+export default () => (
   <Layout>
     <SEO
       title="Intro component with sign-up form coding challenge
@@ -10,5 +10,3 @@ const SignUp = () => (
     <h1>SignUp</h1>
   </Layout>
 )
-
-export default SignUp

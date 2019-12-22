@@ -1,4 +1,5 @@
 import React from "react"
+import PropTypes from "prop-types"
 import styles from "./Card.module.scss"
 const Card = ({ color, image, title, description }) => {
   return (
@@ -10,6 +11,10 @@ const Card = ({ color, image, title, description }) => {
       <embed className={styles.logo} src={image} />
     </div>
   )
+}
+
+Card.propTypes = {
+  color: PropTypes.number,
 }
 
 export default Card

@@ -1,0 +1,11 @@
+[
+  { "name": "mohammad", "role": "mobile developer" },
+  {
+    "name": "sina",
+    "role": "frontend"
+  },
+  {
+    "name": "ahmad",
+    "role": "backend"
+  }
+]

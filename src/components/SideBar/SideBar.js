@@ -3,14 +3,14 @@ import PropTypes from "prop-types"
 import React, { useState } from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons"
-import Menu from "../Menu/Menu"
-import styles from "./Header.module.scss"
+import Menu from "../NavigationMenu/NavigationMenu"
+import styles from "./SideBar.module.scss"
 
-const Header = ({ siteTitle }) => {
+const SideBar = ({ siteTitle }) => {
   const [isSideBarHidden, setIsSideBarHidden] = useState(null)
   return (
     <React.Fragment>
-      <header
+      <aside
         className={`${styles.header} ${isSideBarHidden !== null &&
           (isSideBarHidden ? styles.disappear : styles.appear)}`}
       >
@@ -20,7 +20,7 @@ const Header = ({ siteTitle }) => {
           </h1>
           <Menu />
         </div>
-      </header>
+      </aside>
       <button
         className={styles.button}
         onClick={() =>
@@ -31,21 +31,21 @@ const Header = ({ siteTitle }) => {
           })
         }
       >
-        {isSideBarHidden === null || false ? (
-          <FontAwesomeIcon icon={faBars} />
-        ) : (
+        {isSideBarHidden === false ? (
           <FontAwesomeIcon icon={faTimes} />
+        ) : (
+          <FontAwesomeIcon icon={faBars} />
         )}
       </button>
     </React.Fragment>
   )
 }
-Header.propTypes = {
+SideBar.propTypes = {
   siteTitle: PropTypes.string,
 }
 
-Header.defaultProps = {
+SideBar.defaultProps = {
   siteTitle: ``,
 }
 
-export default Header
+export default SideBar
