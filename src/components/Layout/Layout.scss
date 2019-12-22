@@ -46,6 +46,8 @@ template {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+  text-decoration: none;
+  color: inherit;
 }
 a:active,
 a:hover {

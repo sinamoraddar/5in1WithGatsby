@@ -60,7 +60,7 @@ exports.createPages = ({ actions }) => {
   const projectTemplate = path.resolve("./src/templates/Project.js")
 
   personsFile.forEach(person => {
-    const path = `persons/${person.name}`
+    const path = `debuildex/persons/${person.name}`
     createPage({
       path,
       component: personTemplate,
@@ -68,7 +68,7 @@ exports.createPages = ({ actions }) => {
     })
   })
   projectsFile.forEach(project => {
-    const path = `projects/${project.name}`
+    const path = `debuildex/projects/${project.name}`
     createPage({
       path,
       component: projectTemplate,

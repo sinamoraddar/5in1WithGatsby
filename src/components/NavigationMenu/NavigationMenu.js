@@ -15,7 +15,6 @@ const Menu = () => {
       }
     }
   `)
-  console.log(pages)
   return (
     <nav className={styles.menu}>
       {/* <Link to="/fourcardsection/">4 Card Feature Section</Link>

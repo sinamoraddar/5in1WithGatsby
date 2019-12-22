@@ -12,12 +12,12 @@ export default ({ data }) => {
       <Seo title="my first blog made with gatsby" />
       <Blog />
       {allPersonsJson.nodes.map(person => (
-        <Link to={"persons/" + person.name} key={person.name}>
+        <Link to={"debuildex/persons/" + person.name} key={person.name}>
           {person.name}
         </Link>
       ))}
       {allProjectsJson.nodes.map(peroject => (
-        <Link to={"projects/" + peroject.name} key={peroject.name}>
+        <Link to={"debuildex/projects/" + peroject.name} key={peroject.name}>
           {peroject.name}
         </Link>
       ))}

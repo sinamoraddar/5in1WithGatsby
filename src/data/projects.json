@@ -3,5 +3,5 @@
     "name": "debuildex",
     "techStack": ["reactjs", "gatsbyjs"]
   },
-  { "name": "i love food", "techStack": ["reactjs"] }
+  { "name": "my great app", "techStack": ["react native"] }
 ]
