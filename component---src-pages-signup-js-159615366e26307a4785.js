@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{Wwxz:function(n,e,t){"use strict";t.r(e);var a=t("q1tI"),c=t.n(a),r=t("CGcg"),l=t("vrFN");e.default=function(){return c.a.createElement(r.a,null,c.a.createElement(l.a,{title:"Intro component with sign-up form coding challenge\r\n"}),c.a.createElement("h1",null,"SignUp"))}}}]);
+//# sourceMappingURL=component---src-pages-signup-js-159615366e26307a4785.js.map
