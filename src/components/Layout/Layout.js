@@ -34,7 +34,8 @@ const Layout = ({ children }) => {
           paddingTop: 0,
         }}
       > */}
-      {children}
+      <main style={{ width: "100%", minHeight: "100vh" }}>{children}</main>
+
       {/* <footer>
           © {new Date().getFullYear()}, Built with
           {` `}

@@ -9,7 +9,7 @@ export default ({ data }) => {
   return (
     <Layout>
       <SEO title="Projects" />
-      <h1>Projects</h1>
+      <h1 style={{ textAlign: "center" }}>Projects</h1>
       <table className={styles.table}>
         <thead>
           <tr>

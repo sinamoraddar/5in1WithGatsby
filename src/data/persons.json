@@ -1,15 +1,13 @@
 [
-  { "name": "mohammad", "role": "mobile developer" },
   {
-    "name": "sina",
-    "role": "frontend"
+    "name": "jamie vardy",
+    "role": "backend developer",
+    "description": " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, quam."
   },
+
   {
-    "name": "ahmad",
-    "role": "backend"
-  },
-  {
-    "name": "sohrab",
-    "role": "mobile developer"
+    "name": "james maddison",
+    "role": "mobile developer",
+    "description": " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, quam."
   }
 ]

@@ -6,7 +6,7 @@ import Menu from "../NavigationMenu/NavigationMenu"
 const Index = () => {
   return (
     <main className={styles.index}>
-      <h1>Welcome to the 5in1 with Gatsby</h1>
+      <h1>Welcome to 5in1 with Gatsby</h1>
       <p>
         these are my solutions to the challenges provided by
         <a

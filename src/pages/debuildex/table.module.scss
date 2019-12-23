@@ -1,4 +1,12 @@
 .table {
+  width: 60%;
+  margin: 0 auto;
+  border: 1px solid rgb(122, 114, 114);
+
+  td,
+  th {
+    padding-left: 1rem;
+  }
   a {
     display: table-row;
   }

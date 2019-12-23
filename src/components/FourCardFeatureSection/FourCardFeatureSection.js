@@ -7,7 +7,7 @@ import supervisorImage from "../../images/FourCardFeatureSection/images/icon-sup
 import styles from "./FourCardFeatureSection.module.scss"
 
 const FourCardFeatureSection = () => (
-  <main className={styles.fourCardFeatureSection}>
+  <div className={styles.fourCardFeatureSection}>
     <div className={styles.header}>
       <h1>
         Reliable,efficient delivery <br /> <span>Powered by Technology</span>
@@ -44,7 +44,7 @@ const FourCardFeatureSection = () => (
         description="Uses data from past projects to provide better delivery estimates"
       />
     </div>
-  </main>
+  </div>
 )
 
 export default FourCardFeatureSection

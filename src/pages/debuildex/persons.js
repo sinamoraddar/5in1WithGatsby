@@ -8,8 +8,8 @@ export default ({ data }) => {
   return (
     <Layout>
       <SEO title="Persons" />
-      <h1>Persons</h1>
-      <table className={styles.table} style={{ width: "100%" }}>
+      <h1 style={{ textAlign: "center" }}>Persons</h1>
+      <table className={styles.table}>
         <thead>
           <tr>
             <th>Name</th> <th>Role</th>

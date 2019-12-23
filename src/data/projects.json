@@ -1,7 +1,12 @@
 [
   {
-    "name": "debuildex",
-    "techStack": ["reactjs", "gatsbyjs"]
+    "name": "the coolest app on the planet",
+    "techStack": ["reactjs"],
+    "description": " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, quam."
   },
-  { "name": "my great app", "techStack": ["react native"] }
+  {
+    "name": "my great app",
+    "techStack": ["react native"],
+    "description": " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, quam."
+  }
 ]

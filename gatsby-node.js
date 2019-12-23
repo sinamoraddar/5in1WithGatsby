@@ -56,14 +56,14 @@ const projectsFile = require("./src/data/projects.json")
 exports.createPages = ({ actions }) => {
   const { createPage } = actions
 
-  const personTemplate = path.resolve("./src/templates/Person.js")
+  const personsTemplate = path.resolve("./src/templates/Persons.js")
   const projectTemplate = path.resolve("./src/templates/Project.js")
 
   personsFile.forEach(person => {
     const path = `debuildex/persons/${person.name}`
     createPage({
       path,
-      component: personTemplate,
+      component: personsTemplate,
       context: person,
     })
   })
