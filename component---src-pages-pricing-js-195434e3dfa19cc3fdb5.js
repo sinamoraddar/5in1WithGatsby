@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[10],{u52P:function(e,n,t){"use strict";t.r(n);var c=t("q1tI"),i=t.n(c),a=t("CGcg"),l=function(){return i.a.createElement("div",null,"this is the pricing")},r=t("vrFN");n.default=function(){return i.a.createElement(a.a,null,i.a.createElement(r.a,{title:"Pricing component with toggle coding challenge"}),i.a.createElement(l,null))}}}]);
+//# sourceMappingURL=component---src-pages-pricing-js-195434e3dfa19cc3fdb5.js.map
