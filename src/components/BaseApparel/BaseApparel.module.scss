@@ -1,0 +1,227 @@
+@import "./styles/libs/vars";
+.container {
+  //   color: red;
+  * {
+    font-family: $bodyFontFamily;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 3rem 6rem;
+  @media screen and (max-width: 690px) {
+    padding: 3rem;
+  }
+  @media screen and (max-width: 530px) {
+    padding: 3rem 1.5rem;
+  }
+
+  .baseApparel {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    // width: 100%;
+    height: 560px;
+    -webkit-box-shadow: 0px 0px 17px -9px rgba(0, 0, 0, 0.6);
+    -moz-box-shadow: 0px 0px 17px -9px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 17px -9px rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
+      height: unset;
+      position: relative;
+      padding-top: 6rem;
+      background: url(../../images/BaseApparel/bg-pattern-desktop.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      max-width: 540px;
+    }
+    @media screen and (max-width: 440px) {
+      padding-top: 5rem;
+    }
+
+    div {
+      min-height: 100%;
+      @media screen and (max-width: 1000px) {
+        min-height: unset;
+      }
+    }
+    .textContainer {
+      background: url(../../images/BaseApparel/bg-pattern-desktop.svg);
+      background-size: cover;
+      background-position: center;
+      width: 580px;
+      background-repeat: no-repeat;
+      padding: 2rem 6rem 2rem 5rem;
+
+      display: flex;
+      flex-direction: column;
+      //   justify-content: center;
+      @media screen and(max-width:1000px) {
+        width: 100%;
+        align-items: center;
+        padding: 1.5rem;
+      }
+      h1 {
+        margin-top: 1.8em;
+        margin-bottom: 0.4em;
+        display: flex;
+        flex-direction: column;
+        text-transform: uppercase;
+        width: 240px;
+        letter-spacing: 8.2px;
+        font-weight: $semiBoldFontWeight;
+
+        @media screen and(max-width:1000px) {
+          margin-top: 2rem;
+          text-align: center;
+        }
+
+        span {
+          color: $desaturatedRed;
+          font-weight: $lightFontWeight;
+        }
+      }
+      .link {
+        background: url(../../images/BaseApparel/logo.svg);
+        width: 110px;
+        height: 33px;
+        background-size: contain;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-position: center;
+        @media screen and (max-width: 1000px) {
+          position: absolute;
+          width: 140px;
+          top: 2rem;
+          left: 2rem;
+        }
+        @media screen and (max-width: 440px) {
+          width: 120px;
+          top: 1.6rem;
+          left: 1.6rem;
+        }
+      }
+      p {
+        font-size: 0.75em;
+        color: $desaturatedRed;
+        font-weight: 400;
+        @media screen and(max-width:1000px) {
+          text-align: center;
+        }
+      }
+      form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 45px;
+        width: 100%;
+        align-self: center;
+        border: 1.5px solid $desaturatedRed;
+        border-radius: 20px;
+        margin-bottom: 0.3em;
+        position: relative;
+        @media screen and(max-width:1000px) {
+          max-width: 370px;
+        }
+        & + p {
+          margin-bottom: 0;
+          position: relative;
+          left: 2em;
+          @media screen and(max-width:1000px) {
+            position: static;
+          }
+        }
+        > * {
+          height: 100%;
+          border: none;
+          border-radius: 20px;
+        }
+        input {
+          //   width: 100%;
+          flex-grow: 1;
+          max-width: 60%;
+          color: $desaturatedRed;
+          font-size: 0.75em;
+          padding: 0.5em 2em;
+          outline: none;
+        }
+        button {
+          width: 75px;
+          background: $buttonPink;
+          position: relative;
+          right: -3px;
+          height: 45px;
+          -webkit-box-shadow: 0px 0px 17px -9px rgba(0, 0, 0, 0.6);
+          -moz-box-shadow: 0px 0px 17px -9px rgba(0, 0, 0, 0.6);
+          box-shadow: 0px 0px 17px -9px rgba(0, 0, 0, 0.6);
+          padding: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: transform 0.1s ease-in-out;
+          cursor: pointer;
+          outline: none;
+          @media screen and (max-width: 1000px) {
+            width: 60px;
+          }
+          @media screen and(hover:hover) {
+            &:hover {
+              transform: scale(1.07);
+              background: $buttonHoverColor;
+            }
+          }
+        }
+        .errorIcon {
+          border-radius: unset;
+          position: absolute;
+          right: 4em;
+          top: 0.5em;
+        }
+      }
+
+      .formErrorMessage {
+        border: 1.5px solid $softRed;
+        // display: none;
+      }
+      .errorMessage {
+        color: $errorMessageRed;
+      }
+      .successMessage {
+        color: rgb(75, 122, 4);
+      }
+    }
+    .imageContainer {
+      width: 420px;
+      //   height: 1;
+      background: url(../../images/BaseApparel/hero-desktop.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      @media screen and (max-width: 1000px) {
+        width: 100%;
+        height: 337px;
+        background: url(../../images/BaseApparel/hero-mobile.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      //   @media screen and (max-width: 620px) {
+      //     height: 337px;
+      //   }
+      @media screen and (max-width: 530px) {
+        height: 307px;
+      }
+      @media screen and (max-width: 390px) {
+        height: 217px;
+      }
+    }
+  }
+}

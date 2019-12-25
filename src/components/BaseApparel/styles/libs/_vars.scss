@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap");
+// Front-end Style Guide
+
+//  Layout
+
+// The designs were created to the following widths:
+
+$Mobile: 375px;
+$Desktop: 1440px;
+
+//  Colors
+
+// Primary
+
+$desaturatedRed: hsl(0, 36%, 70%);
+$softRed: hsl(0, 93%, 68%);
+$buttonPink: #f29e9e;
+$buttonHoverColor: #f8cecf;
+// Neutral
+
+$darkGrayishRed: hsl(0, 6%, 24%);
+$errorMessageRed: #d97872;
+// Gradients
+
+// Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+// Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
+
+// Typography
+
+// Body Copy
+
+$bodyFontSize: 16px;
+
+// Font
+
+$bodyFontFamily: "Josefin Sans", sans-serif;
+$lightFontWeight: 300;
+$normalFontWeight: 400;
+$semiBoldFontWeight: 600;
